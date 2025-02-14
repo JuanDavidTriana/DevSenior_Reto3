@@ -135,7 +135,7 @@ treeview_productos.column("Cantidad Disponible", width=150)
 # Insertar productos en el Treeview
 for key, producto in productos.items():
     cantidad_disponible = 100  # Aquí puedes cambiar la cantidad disponible según lo necesites
-    treeview_productos.insert("", "end", iid=str(key), values=(producto['nombre'], f"${producto['precio']:.2f}", cantidad_disponible))
+    treeview_productos.insert("", "end", iid=str(key), values=(producto['nombre'], f"${producto['precio']}", cantidad_disponible))
 
 treeview_productos.pack(pady=10)
 
